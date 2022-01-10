@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+
+*   {
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: 'Outfit';
+    color: hsl(215, 51%, 70%);
+    background-color:   hsl(217, 54%, 11%);
+    font-size: 18px;
+}
+.card   {
+    display: flex;
+    justify-content: center;
+    margin-top: 5rem;   /* just for position on screen*/
+}
+.card_container {
+    width: 350px;/* w&h have to be set for fiting img*/
+    height: 595px;/* w&h have to be set for fiting img*/
+    padding: 25px;
+    background-color: hsl(216, 50%, 16%);
+    border-radius: 10px;
+    box-shadow: 10px 5px 5px  hsl(218, 50%, 9%);
+}
+.heroIMG_container {
+    height: 302px;
+    width: 302px;
+    background-color: hsl(178, 100%, 50%);
+}
+#heroIMG {
+    border-radius: 5px;
+    width: 100%; /* image box size as % of container*/
+    height: 100%; 
+    object-fit: cover; /* matching of image pixels to image box*/
+}
+.main_container {
+    height: 14rem;
+}
+.detail_container  {
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+   height: 3rem;
+}
+.detail_time    {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 7rem;
+    justify-content: space-between;    
+}
+.detail_price   {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 7rem;
+}
+.footer {
+    display: inline-flex;
+    align-items: center;
+    height: 3rem;
+    justify-content: space-between;
+    padding-top: 1rem;
+}
+#avatar {
+    padding: 1px;
+    background-color: aliceblue;
+    border-radius: 100px;
+    height: 100%; /*in that order t fit to parent high, important */
+    width: auto;
+}
+.footer p {
+    font-size: 0,6rem;
+    padding-left: 2rem;
+}
+.attribution {
+    font-size: 11px; 
+    color: hsl(228, 45%, 44%);
+}
+h1 {
+    color: hsl(0, 0%, 100%);
+    font-weight: 600;
+    font-size: 22px;
+}
+span {
+    color: hsl(0, 0%, 100%);
+}
+hr {
+    border: none;
+    background-color: hsl(215, 32%, 27%);
+    height: 1px;
+}
+.detail_price p {
+    color: hsl(178, 100%, 50%);
+}
+
+
+/* HOVER SECTION */
+
+.heroIMG_container {
+    background-color: hsl(178, 100%, 50%);
+    border-radius: 5px;
+    background-image: url("images/icon-view.svg");
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-position-y: center;
+}
+
+#heroIMG:hover {
+    /* mix-blend-mode: soft-light; */
+    opacity: 30%;
+    border-radius: 5px;
+    cursor: pointer;
+} 
+
+span:hover  {
+    color: hsl(178, 100%, 50%);
+    cursor: pointer;
+}
+
+h1:hover    {
+    color:hsl(178, 100%, 50%);
+    cursor: pointer;
+}
+
+
+
